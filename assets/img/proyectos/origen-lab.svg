@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#24163f"/>
+      <stop offset="100%" stop-color="#0a0a0f"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="360" fill="url(#bg)"/>
+  <text x="320" y="160" font-family="Inter, Arial, sans-serif" font-size="42" font-weight="800"
+        fill="#a78bfa" text-anchor="middle" opacity="0.9">Origen Lab</text>
+  <text x="320" y="205" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="500"
+        fill="#a9a3c4" text-anchor="middle">Tienda en línea</text>
+</svg>

@@ -1,0 +1,137 @@
+:root {
+  --color-black: #0a0a0f;
+  --color-black-soft: #12121a;
+  --color-black-card: #1a1a24;
+  --color-purple-700: #6d28d9;
+  --color-purple-500: #8b5cf6;
+  --color-purple-400: #a78bfa;
+  --color-purple-300: #c4b5fd;
+  --color-glow: rgba(139, 92, 246, 0.35);
+  --color-text: #f4f1ff;
+  --color-text-muted: #a9a3c4;
+  --color-border: rgba(139, 92, 246, 0.22);
+
+  --gradient-primary: linear-gradient(135deg, #6d28d9 0%, #8b5cf6 45%, #a855f7 100%);
+  --gradient-text: linear-gradient(90deg, #c4b5fd, #8b5cf6, #a78bfa);
+
+  --font-main: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", "Cascadia Code", Consolas, monospace;
+
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 22px;
+  --radius-full: 999px;
+
+  --space-1: 0.5rem;
+  --space-2: 1rem;
+  --space-3: 1.5rem;
+  --space-4: 2.5rem;
+  --space-5: 4rem;
+
+  --nav-height: 72px;
+  --container-width: 1140px;
+
+  --shadow-card: 0 8px 30px rgba(0, 0, 0, 0.45);
+  --shadow-glow: 0 0 40px var(--color-glow);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: var(--nav-height);
+}
+
+body {
+  font-family: var(--font-main);
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--color-text);
+  background-color: var(--color-black);
+  background-image:
+    radial-gradient(ellipse 80% 50% at 50% -10%, rgba(109, 40, 217, 0.28), transparent),
+    radial-gradient(ellipse 60% 40% at 100% 100%, rgba(139, 92, 246, 0.1), transparent);
+  background-attachment: fixed;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: var(--color-purple-400);
+  text-decoration: none;
+  transition: color 0.25s ease;
+}
+
+a:hover {
+  color: var(--color-purple-300);
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+button {
+  font-family: inherit;
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: inherit;
+}
+
+input,
+textarea {
+  font-family: inherit;
+  font-size: 1rem;
+  color: var(--color-text);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  line-height: 1.25;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+::selection {
+  background: var(--color-purple-500);
+  color: #fff;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-black);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-purple-700);
+  border-radius: var(--radius-full);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-purple-500);
+}
+
+.gradient-text {
+  background: var(--gradient-text);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}

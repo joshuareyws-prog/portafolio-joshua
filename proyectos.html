@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Proyectos de Joshua Hernandez Reyes: Origen Lab, tienda en línea, y más." />
+  <title>Joshua.dev</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="assets/css/base.css" />
+  <link rel="stylesheet" href="assets/css/layout.css" />
+  <link rel="stylesheet" href="assets/css/components.css" />
+  <link rel="stylesheet" href="assets/css/pages.css" />
+</head>
+<body>
+  <header class="navbar" id="navbar">
+    <div class="container navbar__inner">
+      <a href="index.html" class="brand">Joshua<span class="brand__dot">.dev</span></a>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="navLinks">
+        <span class="nav__toggle-bar"></span>
+        <span class="nav__toggle-bar"></span>
+        <span class="nav__toggle-bar"></span>
+      </button>
+
+      <nav class="nav__links" id="navLinks" aria-label="Navegación principal">
+        <a href="index.html" class="nav__link">Inicio</a>
+        <a href="habilidades.html" class="nav__link">Habilidades</a>
+        <a href="proyectos.html" class="nav__link active">Proyectos</a>
+        <a href="contacto.html" class="nav__link">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <div class="section__header" data-reveal>
+          <h1 class="section__title">Mis <span class="gradient-text">proyectos</span></h1>
+          <p class="section__subtitle">Trabajos en los que he aplicado mis habilidades para construir soluciones reales.</p>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card" data-reveal>
+            <div class="project-card__media">
+              <img src="assets/img/proyectos/origen-lab.svg" alt="Captura de Origen Lab, tienda en línea"
+                   onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+              <div style="display:none">🛒</div>
+            </div>
+            <div class="project-card__body">
+              <h2 class="project-card__title">Origen Lab</h2>
+              <p class="project-card__desc">
+                Tienda en línea con catálogo de productos, carrito de compras y experiencia
+                de usuario pensada para vender de forma clara y sencilla.
+              </p>
+              <div class="project-card__tags" aria-label="Tecnologías utilizadas">
+                <span class="chip">HTML</span>
+                <span class="chip">CSS</span>
+                <span class="chip">JavaScript</span>
+                <span class="chip">Node.js</span>
+              </div>
+              <div class="project-card__links">
+                <a href="#" class="project-card__link">Ver sitio ↗</a>
+                <a href="https://github.com/joshuareyws-prog/origen-lab" target="_blank" rel="noopener noreferrer" class="project-card__link">Código ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card" data-reveal data-reveal-delay="1">
+            <div class="project-card__media">
+              <img src="assets/img/proyectos/proyecto-2.svg" alt="Captura de proyecto destacado"
+                   onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+              <div style="display:none">💡</div>
+            </div>
+            <div class="project-card__body">
+              <h2 class="project-card__title">Proyecto destacado</h2>
+              <p class="project-card__desc">
+                Aquí puedes describir tu segundo proyecto: qué problema resuelve, a quién va
+                dirigido y qué resultado obtuviste. Reemplaza el título, la descripción y el enlace.
+              </p>
+              <div class="project-card__tags" aria-label="Tecnologías utilizadas">
+                <span class="chip">HTML</span>
+                <span class="chip">CSS</span>
+                <span class="chip">JavaScript</span>
+              </div>
+              <div class="project-card__links">
+                <a href="#" class="project-card__link">Ver sitio ↗</a>
+                <a href="#" class="project-card__link">Código ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card" data-reveal data-reveal-delay="2">
+            <div class="project-card__media">
+              <img src="assets/img/proyectos/proyecto-3.svg" alt="Captura de otro proyecto"
+                   onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+              <div style="display:none">🚧</div>
+            </div>
+            <div class="project-card__body">
+              <h2 class="project-card__title">Próximo proyecto</h2>
+              <p class="project-card__desc">
+                Espacio para un tercer proyecto en desarrollo. Agrega la descripción cuando
+                esté listo para mostrarlo al mundo.
+              </p>
+              <div class="project-card__tags" aria-label="Tecnologías utilizadas">
+                <span class="chip">TypeScript</span>
+                <span class="chip">Node.js</span>
+              </div>
+              <div class="project-card__links">
+                <a href="#" class="project-card__link">Ver sitio ↗</a>
+                <a href="#" class="project-card__link">Código ↗</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span class="footer__brand">Joshua Hernandez Reyes</span>
+      <div class="footer__socials">
+        <a href="https://github.com/joshuareyws-prog" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" role="img"><path d="M12 .5A11.5 11.5 0 0 0 .5 12a11.5 11.5 0 0 0 7.9 10.9c.6.1.8-.2.8-.5v-2c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.4-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2a11 11 0 0 1 5.8 0C17.2 4.9 18.2 5.2 18.2 5.2c.6 1.6.2 2.8.1 3.1.7.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.6.8.5A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5z"/></svg>
+        </a>
+      </div>
+      <p class="footer__copy">© <span id="year"></span> Joshua Hernandez Reyes</p>
+    </div>
+  </footer>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

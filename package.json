@@ -1,0 +1,14 @@
+{
+  "name": "portafolio-joshua",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Portafolio profesional de Joshua Hernandez Reyes",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "start": "node server.js"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.4"
+  }
+}
