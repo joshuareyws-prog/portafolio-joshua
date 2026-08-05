@@ -4,8 +4,6 @@ const CURSOR_SELECTOR = "#typedCursor";
 const PHRASES: readonly string[] = [
   "Ingeniero en Desarrollo y Tecnologías de Software.",
   "Construyo sitios web modernos y responsivos.",
-  "HTML, CSS, JavaScript y TypeScript.",
-  "Tiendas en línea como Origen Lab.",
 ];
 
 const TYPE_SPEED = 70;

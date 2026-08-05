@@ -219,10 +219,11 @@
   width: min(340px, 78vw);
   aspect-ratio: 1;
   border-radius: var(--radius-lg);
-  overflow: hidden;
+  overflow: visible;
   border: 1px solid var(--color-border);
   background: var(--color-black-card);
   box-shadow: var(--shadow-glow);
+  isolation: isolate;
 }
 
 .hero__photo-ring::before {
@@ -235,6 +236,29 @@
   filter: blur(18px);
   opacity: 0.5;
   animation: float-glow 6s ease-in-out infinite;
+}
+
+.hero__photo-ring::after {
+  content: "";
+  position: absolute;
+  inset: -3px;
+  z-index: -2;
+  border-radius: inherit;
+  padding: 3px;
+  pointer-events: none;
+  background: conic-gradient(
+    from var(--angle, 0deg),
+    transparent 0deg,
+    #8b5cf6 90deg,
+    #a855f7 180deg,
+    #8b5cf6 270deg,
+    transparent 360deg
+  );
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  mask-composite: exclude;
+  animation: border-spin 8s linear infinite;
 }
 
 @keyframes float-glow {
@@ -251,6 +275,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  border-radius: var(--radius-lg);
   transition: transform 0.5s ease;
 }
 
@@ -265,6 +290,7 @@
   font-size: 5rem;
   font-weight: 800;
   color: var(--color-purple-500);
+  border-radius: var(--radius-lg);
   background:
     radial-gradient(circle at 30% 30%, rgba(139, 92, 246, 0.35), transparent 60%),
     var(--color-black-card);
@@ -347,6 +373,8 @@
 
   .hero__photo {
     order: -1;
+    flex-direction: column;
+    align-items: center;
   }
 
   .hero__socials {
@@ -354,6 +382,10 @@
     flex-direction: row;
     justify-content: center;
     margin-top: var(--space-3);
+  }
+
+  .hero__socials .social-icon:not(:first-child) {
+    margin-left: var(--space-2);
   }
 }
 

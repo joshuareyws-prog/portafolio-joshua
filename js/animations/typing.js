@@ -3,8 +3,6 @@ const CURSOR_SELECTOR = "#typedCursor";
 const PHRASES = [
     "Ingeniero en Desarrollo y Tecnologías de Software.",
     "Construyo sitios web modernos y responsivos.",
-    "HTML, CSS, JavaScript y TypeScript.",
-    "Tiendas en línea como Origen Lab.",
 ];
 const TYPE_SPEED = 70;
 const DELETE_SPEED = 35;

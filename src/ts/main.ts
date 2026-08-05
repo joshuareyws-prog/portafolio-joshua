@@ -3,6 +3,11 @@ import { initMobileMenu } from "./ui/mobile-menu.js";
 import { initTyping } from "./animations/typing.js";
 import { initReveal, initProgressBars, initCounters } from "./animations/reveal.js";
 import { initParticles } from "./animations/particles.js";
+import { initTilt } from "./effects/tilt.js";
+import { initMagnetic } from "./effects/magnetic.js";
+import { initCursorGlow } from "./effects/cursor-glow.js";
+import { initScrollProgress } from "./effects/scroll-progress.js";
+import { initBackToTop } from "./effects/back-to-top.js";
 
 const initFooterYear = (): void => {
   const year = document.querySelector<HTMLElement>("#year");
@@ -19,7 +24,17 @@ const initContactForm = (): void => {
     return;
   }
 
-  form.addEventListener("submit", (event) => {
+  const setStatus = (message: string, isError: boolean): void => {
+    status.textContent = message;
+    status.classList.toggle("form__status--error", isError);
+    status.classList.add("show");
+  };
+
+  const hideStatus = (): void => {
+    status.classList.remove("show");
+  };
+
+  form.addEventListener("submit", async (event) => {
     event.preventDefault();
 
     const name = document.querySelector<HTMLInputElement>("#name")?.value.trim();
@@ -29,24 +44,52 @@ const initContactForm = (): void => {
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
     if (!name || !email || !message) {
-      status.textContent = "Por favor completa todos los campos.";
-      status.classList.add("show");
+      setStatus("Por favor completa todos los campos.", true);
       return;
     }
 
     if (!emailPattern.test(email)) {
-      status.textContent = "Ingresa un correo electrónico válido.";
-      status.classList.add("show");
+      setStatus("Ingresa un correo electrónico válido.", true);
       return;
     }
 
-    form.reset();
-    status.textContent = "¡Mensaje enviado! Te responderé pronto.";
-    status.classList.add("show");
+    const button = form.querySelector<HTMLButtonElement>('button[type="submit"]');
+    const originalText = button?.textContent ?? "Enviar mensaje";
 
-    window.setTimeout(() => {
-      status.classList.remove("show");
-    }, 6000);
+    if (button) {
+      button.disabled = true;
+      button.textContent = "Enviando...";
+    }
+
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: new FormData(form),
+        headers: { Accept: "application/json" },
+      });
+
+      const data = (await response.json()) as { success: boolean; message?: string };
+
+      if (!response.ok || !data.success) {
+        throw new Error(data.message ?? "Web3Forms error");
+      }
+
+      form.reset();
+      setStatus("¡Mensaje enviado! Te responderé pronto.", false);
+    } catch (error) {
+      const detail = error instanceof Error ? error.message : "";
+      const fallback = "Hubo un problema al enviar el mensaje. Intenta de nuevo.";
+      const isApiError = detail && detail !== "Web3Forms error";
+      setStatus(isApiError ? `Error: ${detail}` : fallback, true);
+      console.error(error);
+    } finally {
+      if (button) {
+        button.disabled = false;
+        button.textContent = originalText;
+      }
+    }
+
+    window.setTimeout(hideStatus, 6000);
   });
 };
 
@@ -60,6 +103,11 @@ function main(): void {
   initCounters();
   initContactForm();
   initParticles();
+  initScrollProgress();
+  initBackToTop();
+  initTilt();
+  initMagnetic();
+  initCursorGlow();
 }
 
 main();
