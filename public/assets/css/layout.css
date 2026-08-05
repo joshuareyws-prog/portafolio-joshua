@@ -46,9 +46,9 @@
 }
 
 .brand__logo {
-  width: 34px;
-  height: 34px;
-  border-radius: 9px;
+  width: 42px;
+  height: 42px;
+  border-radius: 10px;
   object-fit: contain;
 }
 
