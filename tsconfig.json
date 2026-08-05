@@ -12,7 +12,7 @@
     "forceConsistentCasingInFileNames": true,
     "removeComments": true,
     "sourceMap": false,
-    "outDir": "js",
+    "outDir": "public/js",
     "rootDir": "src/ts"
   },
   "include": ["src/**/*.ts"]
