@@ -2,7 +2,6 @@ const TYPED_SELECTOR = "#typed";
 const CURSOR_SELECTOR = "#typedCursor";
 
 const PHRASES: readonly string[] = [
-  "Ingeniero en Desarrollo y Tecnologías de Software.",
   "Construyo sitios web modernos y responsivos.",
 ];
 

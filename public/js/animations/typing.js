@@ -1,7 +1,6 @@
 const TYPED_SELECTOR = "#typed";
 const CURSOR_SELECTOR = "#typedCursor";
 const PHRASES = [
-    "Ingeniero en Desarrollo y Tecnologías de Software.",
     "Construyo sitios web modernos y responsivos.",
 ];
 const TYPE_SPEED = 70;
