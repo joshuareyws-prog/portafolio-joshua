@@ -186,3 +186,47 @@
     grid-template-columns: 1fr;
   }
 }
+
+/* ===== Página 404 ===== */
+.error-section {
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-8) 0;
+}
+
+.error-section__inner {
+  text-align: center;
+  max-width: 560px;
+}
+
+.error-section__code {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: clamp(5rem, 18vw, 9rem);
+  font-weight: 800;
+  line-height: 1;
+  background: var(--gradient-text);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+.error-section__title {
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  margin-bottom: var(--space-2);
+}
+
+.error-section__text {
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-4);
+}
+
+.error-section__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  justify-content: center;
+}

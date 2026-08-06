@@ -117,7 +117,7 @@
 .skill__bar {
   height: 10px;
   border-radius: var(--radius-full);
-  background: rgba(255, 255, 255, 0.06);
+  background: var(--color-track);
   overflow: hidden;
   border: 1px solid var(--color-border);
 }
@@ -297,7 +297,7 @@
 
 .form__input::placeholder,
 .form__textarea::placeholder {
-  color: rgba(169, 163, 196, 0.55);
+  color: var(--color-placeholder);
 }
 
 .form__textarea {
@@ -401,6 +401,44 @@
 
 .contact-info__label {
   color: var(--color-text-muted);
+}
+
+/* ===== Toggle de tema ===== */
+.theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  margin-left: auto;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: rgba(139, 92, 246, 0.08);
+  color: var(--color-purple-300);
+  transition: transform 0.25s ease, border-color 0.25s ease, background 0.25s ease, color 0.25s ease;
+}
+
+.theme-toggle:hover {
+  border-color: var(--color-purple-400);
+  background: rgba(139, 92, 246, 0.14);
+  transform: translateY(-2px);
+}
+
+.theme-toggle svg {
+  width: 20px;
+  height: 20px;
+}
+
+.theme-toggle__icon--sun {
+  display: none;
+}
+
+:root[data-theme="light"] .theme-toggle__icon--sun {
+  display: block;
+}
+
+:root[data-theme="light"] .theme-toggle__icon--moon {
+  display: none;
 }
 
 /* ===== Responsive components ===== */

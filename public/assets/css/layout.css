@@ -21,7 +21,7 @@
 }
 
 .navbar.scrolled {
-  background: rgba(10, 10, 15, 0.85);
+  background: var(--color-nav-bg);
   -webkit-backdrop-filter: blur(14px);
   backdrop-filter: blur(14px);
   border-bottom-color: var(--color-border);
@@ -339,7 +339,7 @@
   margin-top: var(--space-5);
   padding: var(--space-4) 0;
   border-top: 1px solid var(--color-border);
-  background: rgba(18, 18, 26, 0.5);
+  background: var(--color-footer-bg);
 }
 
 .footer__inner {
@@ -417,7 +417,7 @@
     align-items: stretch;
     gap: 0;
     padding: var(--space-2);
-    background: rgba(10, 10, 15, 0.97);
+    background: var(--color-nav-bg);
     border-bottom: 1px solid var(--color-border);
     transform: translateY(-130%);
     opacity: 0;

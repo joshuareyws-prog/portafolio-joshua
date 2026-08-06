@@ -11,6 +11,12 @@
   --color-text-muted: #a9a3c4;
   --color-border: rgba(139, 92, 246, 0.22);
 
+  --color-nav-bg: rgba(10, 10, 15, 0.85);
+  --color-footer-bg: rgba(18, 18, 26, 0.5);
+  --color-chip-bg: rgba(10, 10, 15, 0.85);
+  --color-track: rgba(255, 255, 255, 0.06);
+  --color-placeholder: rgba(169, 163, 196, 0.55);
+
   --gradient-primary: linear-gradient(135deg, #6d28d9 0%, #8b5cf6 45%, #a855f7 100%);
   --gradient-text: linear-gradient(90deg, #c4b5fd, #8b5cf6, #a78bfa);
 
@@ -33,6 +39,32 @@
 
   --shadow-card: 0 8px 30px rgba(0, 0, 0, 0.45);
   --shadow-glow: 0 0 40px var(--color-glow);
+}
+
+:root[data-theme="light"] {
+  --color-black: #f4f2fb;
+  --color-black-soft: #ffffff;
+  --color-black-card: #ffffff;
+  --color-purple-400: #6d28d9;
+  --color-purple-300: #7c3aed;
+  --color-glow: rgba(139, 92, 246, 0.22);
+  --color-text: #1a1a24;
+  --color-text-muted: #5b5670;
+  --color-border: rgba(109, 40, 217, 0.18);
+
+  --color-nav-bg: rgba(255, 255, 255, 0.85);
+  --color-footer-bg: rgba(255, 255, 255, 0.6);
+  --color-chip-bg: rgba(109, 40, 217, 0.08);
+  --color-track: rgba(109, 40, 217, 0.12);
+  --color-placeholder: rgba(91, 86, 112, 0.55);
+
+  --gradient-text: linear-gradient(90deg, #7c3aed, #8b5cf6, #6d28d9);
+
+  --shadow-card: 0 8px 30px rgba(109, 40, 217, 0.14);
+}
+
+html.theme-anim * {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease !important;
 }
 
 *,
