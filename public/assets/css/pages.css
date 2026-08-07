@@ -122,10 +122,6 @@
   gap: var(--space-3);
 }
 
-.project-card__status {
-  margin-top: var(--space-2);
-}
-
 /* ===== Formación / certificaciones ===== */
 .education-grid {
   display: grid;
