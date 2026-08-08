@@ -242,6 +242,22 @@
   gap: 0.5rem;
 }
 
+.project-card__links {
+  display: flex;
+  gap: var(--space-2);
+  margin-top: var(--space-1);
+}
+
+.project-card__link {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--color-purple-300);
+}
+
+.project-card__link:hover {
+  color: var(--color-purple-100, #ede9fe);
+}
+
 /* ===== Formulario ===== */
 .form {
   max-width: 640px;
