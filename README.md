@@ -8,7 +8,7 @@ Portafolio web personal de Joshua Hernandez Reyes, desarrollador web de Tuxtla G
 
 - **Deploy:** https://portafolio-joshua-three.vercel.app
 - **Proyecto destacado — Origen Lab:** https://origenlab.up.railway.app
-- **Proyecto — Shulla:** https://joyella.up.railway.app
+- **Proyecto — Shulla:** https://shulla.up.railway.app
 
 ## ✨ Características
 
