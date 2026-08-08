@@ -8,18 +8,19 @@ Portafolio web personal de Joshua Hernandez Reyes, desarrollador web de Tuxtla G
 
 - **Deploy:** https://portafolio-joshua-three.vercel.app
 - **Proyecto destacado — Origen Lab:** https://origenlab.up.railway.app
+- **Proyecto — JoyElla:** https://joyella.up.railway.app
 
 ## ✨ Características
 
-- Diseño responsivo con modo claro/oscuro (con preferencia del sistema).
-- Animaciones suaves: cursor glow, reveal al hacer scroll, partículas y efectos 3D.
+- Diseño responsivo y estático, con modo claro/oscuro (respeta la preferencia del sistema).
 - SEO optimizado: meta tags Open Graph/Twitter, `sitemap.xml`, `robots.txt` y datos estructurados.
 - Formulario de contacto funcional vía Web3Forms.
+- Lightbox para ampliar las capturas de proyectos.
 - Página 404 personalizada.
 
 ## 🛠️ Stack
 
-- HTML5, CSS3 (variables, animaciones)
+- HTML5, CSS3 (variables de color)
 - TypeScript
 - Vercel (deploy estático)
 
@@ -42,7 +43,7 @@ npm run build
 
 ```
 public/          Sitio final: HTML, CSS, JS compilado y assets
-src/ts/          Código fuente TypeScript (organizado en ui/, effects/, animations/)
+src/ts/          Código fuente TypeScript (organizado en ui/ y effects/)
 public/assets/   Imágenes, CV y estilos
 ```
 
