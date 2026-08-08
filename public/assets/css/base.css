@@ -104,7 +104,6 @@ body::before {
     radial-gradient(circle at 20% 20%, rgba(139, 92, 246, 0.18), transparent 45%),
     radial-gradient(circle at 80% 60%, rgba(109, 40, 217, 0.15), transparent 45%),
     radial-gradient(circle at 60% 90%, rgba(168, 85, 247, 0.1), transparent 40%);
-  animation: aurora 18s ease-in-out infinite alternate;
 }
 
 body::after {
@@ -185,10 +184,8 @@ h4 {
 
 .gradient-text {
   background: var(--gradient-text);
-  background-size: 200% auto;
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
   color: transparent;
-  animation: gradient-shift 6s ease-in-out infinite;
 }

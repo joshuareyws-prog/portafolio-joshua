@@ -2,12 +2,6 @@ import { initNavbar } from "./ui/navbar.js";
 import { initThemeToggle } from "./ui/theme-toggle.js";
 import { initLightbox } from "./ui/lightbox.js";
 import { initMobileMenu } from "./ui/mobile-menu.js";
-import { initTyping } from "./animations/typing.js";
-import { initReveal, initProgressBars, initCounters } from "./animations/reveal.js";
-import { initParticles } from "./animations/particles.js";
-import { initTilt } from "./effects/tilt.js";
-import { initMagnetic } from "./effects/magnetic.js";
-import { initCursorGlow } from "./effects/cursor-glow.js";
 import { initScrollProgress } from "./effects/scroll-progress.js";
 import { initBackToTop } from "./effects/back-to-top.js";
 
@@ -101,17 +95,9 @@ function main(): void {
   initThemeToggle();
   initLightbox();
   initMobileMenu();
-  initTyping();
-  initReveal();
-  initProgressBars();
-  initCounters();
   initContactForm();
-  initParticles();
   initScrollProgress();
   initBackToTop();
-  initTilt();
-  initMagnetic();
-  initCursorGlow();
 }
 
 main();
