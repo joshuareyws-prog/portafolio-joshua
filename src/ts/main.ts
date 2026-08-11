@@ -1,5 +1,4 @@
 import { initNavbar } from "./ui/navbar.js";
-import { initThemeToggle } from "./ui/theme-toggle.js";
 import { initLightbox } from "./ui/lightbox.js";
 import { initMobileMenu } from "./ui/mobile-menu.js";
 import { initScrollProgress } from "./effects/scroll-progress.js";
@@ -92,7 +91,6 @@ const initContactForm = (): void => {
 function main(): void {
   initFooterYear();
   initNavbar();
-  initThemeToggle();
   initLightbox();
   initMobileMenu();
   initContactForm();

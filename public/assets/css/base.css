@@ -41,32 +41,6 @@
   --shadow-glow: 0 0 40px var(--color-glow);
 }
 
-:root[data-theme="dark"] {
-  --color-black: #0a0a0f;
-  --color-black-soft: #12121a;
-  --color-black-card: #1a1a24;
-  --color-purple-400: #a78bfa;
-  --color-purple-300: #c4b5fd;
-  --color-glow: rgba(139, 92, 246, 0.35);
-  --color-text: #f4f1ff;
-  --color-text-muted: #a9a3c4;
-  --color-border: rgba(139, 92, 246, 0.22);
-
-  --color-nav-bg: rgba(10, 10, 15, 0.85);
-  --color-footer-bg: rgba(18, 18, 26, 0.5);
-  --color-chip-bg: rgba(10, 10, 15, 0.85);
-  --color-track: rgba(255, 255, 255, 0.06);
-  --color-placeholder: rgba(169, 163, 196, 0.55);
-
-  --gradient-text: linear-gradient(90deg, #c4b5fd, #8b5cf6, #a78bfa);
-
-  --shadow-card: 0 8px 30px rgba(0, 0, 0, 0.45);
-}
-
-html.theme-anim * {
-  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease !important;
-}
-
 *,
 *::before,
 *::after {

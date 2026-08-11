@@ -384,44 +384,6 @@
   color: var(--color-text-muted);
 }
 
-/* ===== Toggle de tema ===== */
-.theme-toggle {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 42px;
-  height: 42px;
-  margin-left: auto;
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-md);
-  background: rgba(139, 92, 246, 0.08);
-  color: var(--color-purple-300);
-  transition: transform 0.25s ease, border-color 0.25s ease, background 0.25s ease, color 0.25s ease;
-}
-
-.theme-toggle:hover {
-  border-color: var(--color-purple-400);
-  background: rgba(139, 92, 246, 0.14);
-  transform: translateY(-2px);
-}
-
-.theme-toggle svg {
-  width: 20px;
-  height: 20px;
-}
-
-.theme-toggle__icon--sun {
-  display: none;
-}
-
-:root[data-theme="light"] .theme-toggle__icon--sun {
-  display: block;
-}
-
-:root[data-theme="light"] .theme-toggle__icon--moon {
-  display: none;
-}
-
 /* ===== Responsive components ===== */
 @media (max-width: 900px) {
   .contact-grid {
