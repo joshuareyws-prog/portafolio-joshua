@@ -3,19 +3,14 @@ const STORAGE_KEY = "theme";
 const THEME_ATTR = "data-theme";
 const ANIM_CLASS = "theme-anim";
 
-const getPreferredTheme = (): "dark" | "light" =>
-  window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark";
-
-const getInitialTheme = (): "dark" | "light" => {
-  const stored = localStorage.getItem(STORAGE_KEY);
-  return stored === "light" || stored === "dark" ? stored : getPreferredTheme();
-};
+const getInitialTheme = (): "dark" | "light" =>
+  localStorage.getItem(STORAGE_KEY) === "dark" ? "dark" : "light";
 
 const applyTheme = (theme: "dark" | "light", toggle: HTMLElement): void => {
   const root = document.documentElement;
 
-  if (theme === "light") {
-    root.setAttribute(THEME_ATTR, "light");
+  if (theme === "dark") {
+    root.setAttribute(THEME_ATTR, "dark");
   } else {
     root.removeAttribute(THEME_ATTR);
   }
@@ -44,14 +39,4 @@ export function initThemeToggle(): void {
     addAnimClass();
     applyTheme(theme, toggle);
   });
-
-  window
-    .matchMedia("(prefers-color-scheme: light)")
-    .addEventListener("change", (event) => {
-      if (localStorage.getItem(STORAGE_KEY)) {
-        return;
-      }
-      theme = event.matches ? "light" : "dark";
-      applyTheme(theme, toggle);
-    });
 }

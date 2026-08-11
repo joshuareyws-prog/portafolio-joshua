@@ -235,7 +235,7 @@
 }
 
 .project-card__link:hover {
-  color: var(--color-purple-100, #ede9fe);
+  color: var(--color-purple-100, var(--color-purple-500));
 }
 
 /* ===== Formulario ===== */

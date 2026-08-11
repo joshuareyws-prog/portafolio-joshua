@@ -21,9 +21,7 @@
   <script>
     (function () {
       try {
-        var t = localStorage.getItem("theme");
-        if (!t) t = matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark";
-        if (t === "light") document.documentElement.dataset.theme = "light";
+        if (localStorage.getItem("theme") === "dark") document.documentElement.dataset.theme = "dark";
       } catch (e) {}
     })();
   </script>
