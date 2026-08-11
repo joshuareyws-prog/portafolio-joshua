@@ -28,7 +28,7 @@ html.reveal-ready [data-reveal].revealed {
   right: 0;
   height: 3px;
   z-index: 1002;
-  background: linear-gradient(90deg, #6d28d9, #8b5cf6, #a855f7);
+  background: var(--color-purple-500);
   transform-origin: left;
   transform: scaleX(0);
   will-change: transform;
@@ -49,7 +49,6 @@ html.reveal-ready [data-reveal].revealed {
   font-size: 1.2rem;
   font-weight: 700;
   line-height: 1;
-  box-shadow: var(--shadow-glow);
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.3s ease, visibility 0.3s ease, border-color 0.3s ease;
@@ -81,7 +80,6 @@ html.reveal-ready [data-reveal].revealed {
   border-radius: var(--radius-full);
   background: var(--color-chip-bg);
   color: var(--color-purple-300);
-  box-shadow: 0 0 18px rgba(139, 92, 246, 0.18);
 }
 
 .hero__chip:nth-child(1) {

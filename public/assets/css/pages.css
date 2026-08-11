@@ -56,7 +56,6 @@
   font-size: 2rem;
   margin-bottom: var(--space-1);
   color: var(--color-purple-300);
-  filter: drop-shadow(0 0 12px var(--color-glow));
 }
 
 .feature__title {
@@ -180,11 +179,7 @@
   font-size: clamp(5rem, 18vw, 9rem);
   font-weight: 800;
   line-height: 1;
-  background: var(--gradient-text);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  color: transparent;
+  color: var(--color-purple-500);
 }
 
 .error-section__title {

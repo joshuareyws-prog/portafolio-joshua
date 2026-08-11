@@ -9,43 +9,16 @@
   font-size: 0.95rem;
   border-radius: var(--radius-full);
   border: 1px solid transparent;
-  position: relative;
-  overflow: hidden;
-  transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
-}
-
-.btn:hover {
-  transform: translateY(-2px);
-}
-
-.btn:active {
-  transform: translateY(0);
+  transition: border-color 0.25s ease, background-color 0.25s ease, color 0.25s ease;
 }
 
 .btn--primary {
-  background: var(--gradient-primary);
+  background: var(--color-purple-700);
   color: #fff;
-  box-shadow: 0 4px 20px rgba(139, 92, 246, 0.35);
 }
 
 .btn--primary:hover {
-  box-shadow: 0 6px 28px rgba(139, 92, 246, 0.55);
-}
-
-.btn--primary::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -60%;
-  width: 40%;
-  height: 100%;
-  background: linear-gradient(100deg, transparent, rgba(255, 255, 255, 0.35), transparent);
-  transform: skewX(-20deg);
-  transition: left 0.5s ease;
-}
-
-.btn--primary:hover::after {
-  left: 120%;
+  background: #5b21b6;
 }
 
 .btn--outline {
@@ -55,7 +28,8 @@
 }
 
 .btn--outline:hover {
-  background: rgba(139, 92, 246, 0.14);
+  border-color: var(--color-purple-400);
+  background: rgba(139, 92, 246, 0.12);
 }
 
 .btn--ghost {
@@ -82,13 +56,11 @@
   border: 1px solid var(--color-border);
   border-radius: var(--radius-md);
   padding: var(--space-3);
-  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+  transition: border-color 0.3s ease;
 }
 
 .card:hover {
-  transform: translateY(-6px);
   border-color: var(--color-purple-400);
-  box-shadow: var(--shadow-glow);
 }
 
 /* ===== Barras de habilidades ===== */
@@ -113,7 +85,7 @@
 
 .skill__icon {
   font-size: 1.15rem;
-  filter: drop-shadow(0 0 8px var(--color-glow));
+  color: var(--color-purple-300);
 }
 
 .skill__icon .icon {
@@ -128,18 +100,16 @@
 }
 
 .skill__bar {
-  height: 10px;
+  height: 6px;
   border-radius: var(--radius-full);
   background: var(--color-track);
   overflow: hidden;
-  border: 1px solid var(--color-border);
 }
 
 .skill__bar-fill {
   height: 100%;
   border-radius: inherit;
-  background: var(--gradient-primary);
-  box-shadow: 0 0 14px var(--color-glow);
+  background: var(--color-purple-500);
   transition: width 0.8s ease;
 }
 
@@ -172,36 +142,17 @@
   border: 1px solid var(--color-border);
   border-radius: var(--radius-lg);
   overflow: hidden;
-  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-.project-card::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: 1;
-  pointer-events: none;
-  background: linear-gradient(115deg, transparent 30%, rgba(255, 255, 255, 0.12) 50%, transparent 70%);
-  transform: translateX(-120%);
-  transition: transform 0.7s ease;
-}
-
-.project-card:hover::before {
-  transform: translateX(120%);
+  transition: border-color 0.3s ease;
 }
 
 .project-card:hover {
-  transform: translateY(-6px);
   border-color: var(--color-purple-400);
-  box-shadow: var(--shadow-glow);
 }
 
 .project-card__media {
   position: relative;
   aspect-ratio: 16 / 9;
-  background:
-    radial-gradient(circle at 20% 20%, rgba(139, 92, 246, 0.3), transparent 55%),
-    var(--color-black);
+  background: var(--color-black);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -365,11 +316,7 @@
   font-size: clamp(1.8rem, 4vw, 2.6rem);
   font-weight: 800;
   font-family: var(--font-mono);
-  background: var(--gradient-text);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  color: transparent;
+  color: var(--color-purple-500);
 }
 
 .stat__label {
@@ -398,9 +345,7 @@
 }
 
 .social-icon:hover {
-  transform: translateY(-3px);
   border-color: var(--color-purple-400);
-  box-shadow: var(--shadow-glow);
   color: var(--color-purple-300);
 }
 
@@ -441,13 +386,12 @@
   border-radius: var(--radius-md);
   background: rgba(139, 92, 246, 0.08);
   color: var(--color-purple-300);
-  transition: transform 0.25s ease, border-color 0.25s ease, background 0.25s ease, color 0.25s ease;
+  transition: border-color 0.25s ease, background-color 0.25s ease, color 0.25s ease;
 }
 
 .theme-toggle:hover {
   border-color: var(--color-purple-400);
   background: rgba(139, 92, 246, 0.14);
-  transform: translateY(-2px);
 }
 
 .theme-toggle svg {
@@ -513,7 +457,6 @@
   height: auto;
   object-fit: contain;
   border-radius: var(--radius-md);
-  box-shadow: var(--shadow-glow);
 }
 
 .lightbox__close {
