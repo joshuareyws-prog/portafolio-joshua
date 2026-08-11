@@ -55,6 +55,7 @@
 .feature__icon {
   font-size: 2rem;
   margin-bottom: var(--space-1);
+  color: var(--color-purple-300);
   filter: drop-shadow(0 0 12px var(--color-glow));
 }
 

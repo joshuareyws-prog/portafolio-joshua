@@ -4,6 +4,8 @@ import { initLightbox } from "./ui/lightbox.js";
 import { initMobileMenu } from "./ui/mobile-menu.js";
 import { initScrollProgress } from "./effects/scroll-progress.js";
 import { initBackToTop } from "./effects/back-to-top.js";
+import { initReveal } from "./effects/reveal.js";
+import { initSkillsBar } from "./effects/skills-bar.js";
 
 const initFooterYear = (): void => {
   const year = document.querySelector<HTMLElement>("#year");
@@ -98,6 +100,8 @@ function main(): void {
   initContactForm();
   initScrollProgress();
   initBackToTop();
+  initReveal();
+  initSkillsBar();
 }
 
 main();

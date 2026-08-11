@@ -1,5 +1,25 @@
 /* ===== Efectos visuales ===== */
 
+/* --- Reveal sutil al hacer scroll --- */
+html.reveal-ready [data-reveal] {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+html.reveal-ready [data-reveal].revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html.reveal-ready [data-reveal] {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
 /* --- Barra de progreso de scroll --- */
 .scroll-progress {
   position: fixed;

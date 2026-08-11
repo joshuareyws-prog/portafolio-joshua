@@ -189,3 +189,23 @@ h4 {
   -webkit-text-fill-color: transparent;
   color: transparent;
 }
+
+/* ===== Iconos SVG (sprite Lucide) ===== */
+.icon {
+  width: 1.2em;
+  height: 1.2em;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  flex: none;
+  vertical-align: middle;
+}
+
+/* ===== Accesibilidad: foco con teclado ===== */
+:focus-visible {
+  outline: 3px solid rgba(139, 92, 246, 0.55);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
