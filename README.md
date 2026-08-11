@@ -12,7 +12,7 @@ Portafolio web personal de Joshua Hernandez Reyes, desarrollador web de Tuxtla G
 
 ## ✨ Características
 
-- Diseño responsivo y estático, con paleta blanca y degradados morados.
+- Diseño responsivo y estático, con modo claro/oscuro (respeta la preferencia del sistema).
 - SEO optimizado: meta tags Open Graph/Twitter, `sitemap.xml`, `robots.txt` y datos estructurados.
 - Formulario de contacto funcional vía Web3Forms.
 - Lightbox para ampliar las capturas de proyectos.
