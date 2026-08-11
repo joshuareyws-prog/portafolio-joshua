@@ -3,20 +3,20 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Portafolio de Joshua Hernandez Reyes, desarrollador web." />
-  <title>Joshua Hernandez Reyes | Portafolio</title>
+  <meta name="description" content="Portafolio de Joshua Hernández, desarrollador web." />
+  <title>Joshua Hernández | Portafolio</title>
   <link rel="icon" type="image/png" href="assets/img/logo-32.png" />
   <link rel="apple-touch-icon" href="assets/img/logo-180.png" />
   <meta name="theme-color" content="#0a0a0f" media="(prefers-color-scheme: dark)" />
   <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://portafolio-joshua-three.vercel.app/" />
-  <meta property="og:title" content="Joshua Hernandez Reyes | Portafolio" />
-  <meta property="og:description" content="Portafolio de Joshua Hernandez Reyes, desarrollador web." />
+  <meta property="og:title" content="Joshua Hernández | Portafolio" />
+  <meta property="og:description" content="Portafolio de Joshua Hernández, desarrollador web." />
   <meta property="og:image" content="https://portafolio-joshua-three.vercel.app/assets/img/og-image.png" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Joshua Hernandez Reyes | Portafolio" />
-  <meta name="twitter:description" content="Portafolio de Joshua Hernandez Reyes, desarrollador web." />
+  <meta name="twitter:title" content="Joshua Hernández | Portafolio" />
+  <meta name="twitter:description" content="Portafolio de Joshua Hernández, desarrollador web." />
   <meta name="twitter:image" content="https://portafolio-joshua-three.vercel.app/assets/img/og-image.png" />
   <script>
     (function () {
@@ -29,7 +29,7 @@
   {
     "@context": "https://schema.org",
     "@type": "Person",
-    "name": "Joshua Hernandez Reyes",
+    "name": "Joshua Hernández",
     "url": "https://portafolio-joshua-three.vercel.app",
     "jobTitle": "Desarrollador web",
     "email": "mailto:joshuareyws@gmail.com",
@@ -81,8 +81,8 @@
   <header class="navbar" id="navbar">
     <div class="container navbar__inner">
       <a href="index.html" class="brand">
-        <img src="assets/img/logo-nav.png" alt="Logo de Joshua Hernandez Reyes" class="brand__logo" />
-        Joshua<span class="brand__dot">.dev</span>
+        <img src="assets/img/logo-nav.png" alt="Logo de Joshua Hernández" class="brand__logo" />
+        <span class="brand__name">Joshua Hernández</span><span class="brand__dot">.dev</span>
       </a>
 
       <button class="theme-toggle" id="themeToggle" type="button" aria-label="Cambiar tema" aria-pressed="false" title="Cambiar tema">
@@ -115,8 +115,8 @@
       <div class="container hero__grid">
         <div class="hero__content" data-reveal>
           <span class="hero__eyebrow">Disponible para proyectos</span>
-          <h1 class="hero__title">Hola, soy <span class="gradient-text">Joshua Hernandez Reyes</span></h1>
-          <p class="hero__typed-wrap">Construyo sitios web modernos y responsivos.</p>
+          <h1 class="hero__title">Joshua Hernández</h1>
+          <p class="hero__brand">Joshua.dev</p>
           <p class="hero__description">
             Construyo experiencias web modernas, funcionales y con atención al detalle,
             combinando diseño limpio y código de calidad.
@@ -126,13 +126,24 @@
             <a href="contacto.html" class="btn btn--outline">Contactarme <svg class="icon" aria-hidden="true"><use href="#i-arrow-right"></use></svg></a>
             <a href="assets/cv/CV-Joshua-Hernandez-Reyes.pdf" download class="btn btn--ghost">Descargar CV</a>
           </div>
+          <ul class="hero__quick-info" aria-label="Datos rápidos">
+            <li><span class="chip"><svg class="icon" aria-hidden="true"><use href="#i-map-pin"></use></svg></span><span class="about-info__label">Tuxtla Gutiérrez, Chiapas</span></li>
+            <li><span class="chip"><svg class="icon" aria-hidden="true"><use href="#i-graduation"></use></svg></span><span class="about-info__label">Ing. en Desarrollo y Tecnologías de Software</span></li>
+            <li><span class="chip"><svg class="icon" aria-hidden="true"><use href="#i-code"></use></svg></span><span class="about-info__label">Desarrollo web: frontend y proyectos full stack</span></li>
+          </ul>
         </div>
 
         <div class="hero__photo" data-reveal data-reveal-delay="2">
+          <div class="hero__squares" aria-hidden="true">
+            <span class="hero__square hero__square--1"></span>
+            <span class="hero__square hero__square--2"></span>
+            <span class="hero__square hero__square--3"></span>
+            <span class="hero__square hero__square--4"></span>
+          </div>
           <div class="hero__photo-ring">
             <img
               src="assets/img/foto1.jpg"
-              alt="Fotografía de Joshua Hernandez Reyes"
+              alt="Fotografía de Joshua Hernández"
               class="hero__photo-img"
               onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"
             />
@@ -148,13 +159,6 @@
             <a href="https://wa.me/529921044338" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="WhatsApp">
               <svg viewBox="0 0 24 24" role="img"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
             </a>
-          </div>
-
-          <div class="hero__chips" aria-hidden="true">
-            <span class="hero__chip">HTML</span>
-            <span class="hero__chip">CSS</span>
-            <span class="hero__chip">JS</span>
-            <span class="hero__chip">TS</span>
           </div>
         </div>
       </div>
@@ -185,18 +189,6 @@
               Me caracterizo por mi atención al detalle, mi compromiso con la calidad y
               mi disposición para colaborar en proyectos que aporten valor real.
             </p>
-          </div>
-
-          <div class="card about-side" data-reveal data-reveal-delay="1">
-            <h3 class="skills-panel__title">Datos rápidos</h3>
-            <ul class="about-info">
-              <li><span class="chip"><svg class="icon" aria-hidden="true"><use href="#i-user"></use></svg></span><span class="about-info__label">Joshua Hernandez Reyes</span></li>
-              <li><span class="chip"><svg class="icon" aria-hidden="true"><use href="#i-graduation"></use></svg></span><span class="about-info__label">Ing. en Desarrollo y Tecnologías de Software</span></li>
-              <li><span class="chip"><svg class="icon" aria-hidden="true"><use href="#i-map-pin"></use></svg></span><span class="about-info__label">Tuxtla Gutiérrez, Chiapas</span></li>
-              <li><span class="chip"><svg class="icon" aria-hidden="true"><use href="#i-code"></use></svg></span><span class="about-info__label">Desarrollo web: frontend y proyectos full stack</span></li>
-              <li><span class="chip"><svg class="icon" aria-hidden="true"><use href="#i-rocket"></use></svg></span><span class="about-info__label">Disponible para proyectos</span></li>
-            </ul>
-            <a href="contacto.html" class="btn btn--outline" style="margin-top: var(--space-3)">Trabajemos juntos</a>
           </div>
         </div>
       </div>
@@ -262,7 +254,7 @@
     <div class="container">
       <div class="footer__grid">
         <div>
-          <p class="footer__brand">Joshua Hernandez Reyes</p>
+          <p class="footer__brand">Joshua Hernández Joshua.dev</p>
           <p class="footer__tagline">Desarrollador web enfocado en crear experiencias digitales modernas, funcionales y con atención al detalle.</p>
         </div>
         <nav aria-label="Enlaces rápidos">
@@ -284,7 +276,7 @@
         </div>
       </div>
       <div class="footer__bottom">
-        <p class="footer__copy">© <span id="year"></span> Joshua Hernandez Reyes · Hecho con <span class="footer__heart" aria-hidden="true">♥</span></p>
+        <p class="footer__copy">© <span id="year"></span> Joshua Hernández · Hecho con <span class="footer__heart" aria-hidden="true">♥</span></p>
         <div class="footer__socials">
           <a href="https://github.com/joshuareyws-prog" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub">
             <svg viewBox="0 0 24 24" role="img"><path d="M12 .5A11.5 11.5 0 0 0 .5 12a11.5 11.5 0 0 0 7.9 10.9c.6.1.8-.2.8-.5v-2c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.4-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2a11 11 0 0 1 5.8 0C17.2 4.9 18.2 5.2 18.2 5.2c.6 1.6.2 2.8.1 3.1.7.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.6.8.5A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5z"/></svg>

@@ -63,48 +63,4 @@ html.reveal-ready [data-reveal].revealed {
   border-color: var(--color-purple-400);
 }
 
-/* --- Chips del hero (estáticos) --- */
-.hero__chips {
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-}
-
-.hero__chip {
-  position: absolute;
-  font-family: var(--font-mono);
-  font-size: 0.8rem;
-  font-weight: 600;
-  padding: 0.35rem 0.8rem;
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-full);
-  background: var(--color-chip-bg);
-  color: var(--color-purple-300);
-}
-
-.hero__chip:nth-child(1) {
-  top: -8%;
-  left: -12%;
-}
-
-.hero__chip:nth-child(2) {
-  top: 8%;
-  right: -14%;
-}
-
-.hero__chip:nth-child(3) {
-  bottom: 8%;
-  left: -16%;
-}
-
-.hero__chip:nth-child(4) {
-  bottom: -10%;
-  right: -8%;
-}
-
 /* --- Responsive --- */
-@media (max-width: 900px) {
-  .hero__chips {
-    display: none;
-  }
-}

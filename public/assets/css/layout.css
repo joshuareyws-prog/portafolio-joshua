@@ -171,11 +171,10 @@
   margin: var(--space-3) 0 var(--space-1);
 }
 
-.hero__typed-wrap {
+.hero__brand {
   font-size: clamp(1.15rem, 2.6vw, 1.6rem);
   font-weight: 600;
-  min-height: 2.2em;
-  color: var(--color-purple-300);
+  color: var(--color-purple-400);
   font-family: var(--font-mono);
 }
 
@@ -183,6 +182,22 @@
   max-width: 56ch;
   margin: var(--space-3) 0 var(--space-4);
   color: var(--color-text-muted);
+}
+
+.hero__quick-info {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  margin-top: var(--space-3);
+  padding-top: var(--space-3);
+  border-top: 1px solid var(--color-border);
+}
+
+.hero__quick-info li {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.95rem;
 }
 
 .hero__cta {
@@ -197,15 +212,55 @@
   justify-content: center;
 }
 
+.hero__squares {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.hero__square {
+  position: absolute;
+  display: block;
+  background: var(--color-purple-light-accent);
+  border-radius: var(--radius-sm);
+}
+
+.hero__square--1 {
+  top: -1.25rem;
+  left: -1.25rem;
+  width: 88px;
+  height: 88px;
+}
+
+.hero__square--2 {
+  top: 2.5rem;
+  right: -0.75rem;
+  width: 52px;
+  height: 52px;
+}
+
+.hero__square--3 {
+  bottom: -1.5rem;
+  left: 2rem;
+  width: 64px;
+  height: 64px;
+}
+
+.hero__square--4 {
+  bottom: 0.5rem;
+  right: -1.5rem;
+  width: 40px;
+  height: 40px;
+}
+
 .hero__photo-ring {
   position: relative;
   width: min(340px, 78vw);
   aspect-ratio: 1;
   border-radius: var(--radius-lg);
-  overflow: visible;
+  overflow: hidden;
   border: 1px solid var(--color-border);
   background: var(--color-black-card);
-  isolation: isolate;
 }
 
 .hero__photo-img {
@@ -350,6 +405,10 @@
     margin-inline: auto;
   }
 
+  .hero__quick-info {
+    align-items: center;
+  }
+
   .hero__cta {
     justify-content: center;
   }
@@ -431,6 +490,21 @@
 
   .hero__socials {
     margin-top: var(--space-2);
+  }
+}
+
+@media (max-width: 480px) {
+  .brand__name {
+    display: none;
+  }
+
+  .brand__logo {
+    width: 36px;
+    height: 36px;
+  }
+
+  .brand {
+    font-size: 1.1rem;
   }
 }
 

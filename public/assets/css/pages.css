@@ -4,10 +4,8 @@
 }
 
 .about-grid {
-  display: grid;
-  grid-template-columns: 1.3fr 0.7fr;
-  gap: var(--space-3);
-  align-items: stretch;
+  max-width: 760px;
+  margin-inline: auto;
 }
 
 .about-text p + p {
@@ -16,12 +14,7 @@
 
 .about-text p {
   color: var(--color-text-muted);
-}
-
-.about-side {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  font-size: 1.05rem;
 }
 
 .about-info {
