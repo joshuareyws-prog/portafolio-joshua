@@ -9,7 +9,7 @@ const applyTheme = (theme, toggle) => {
         root.setAttribute(THEME_ATTR, "dark");
     }
     else {
-        root.removeAttribute(THEME_ATTR);
+        root.setAttribute(THEME_ATTR, "light");
     }
     toggle.setAttribute("aria-pressed", String(theme === "light"));
 };

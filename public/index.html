@@ -21,7 +21,7 @@
   <script>
     (function () {
       try {
-        if (localStorage.getItem("theme") === "dark") document.documentElement.dataset.theme = "dark";
+        if (localStorage.getItem("theme") === "dark") { document.documentElement.dataset.theme = "dark"; } else { document.documentElement.dataset.theme = "light"; }
       } catch (e) {}
     })();
   </script>
@@ -82,7 +82,7 @@
     <div class="container navbar__inner">
       <a href="index.html" class="brand">
         <img src="assets/img/logo-nav.png" alt="Logo de Joshua Hernández" class="brand__logo" />
-        <span class="brand__name">Joshua Hernández</span>
+        
       </a>
 
       <button class="theme-toggle" id="themeToggle" type="button" aria-label="Cambiar tema" aria-pressed="false" title="Cambiar tema">
@@ -105,6 +105,7 @@
         <a href="index.html" class="nav__link active">Inicio</a>
         <a href="habilidades.html" class="nav__link">Habilidades</a>
         <a href="proyectos.html" class="nav__link">Proyectos</a>
+        <a href="sobre-mi.html" class="nav__link">Sobre mí</a>
         <a href="contacto.html" class="nav__link">Contacto</a>
       </nav>
     </div>
@@ -114,9 +115,7 @@
     <section class="hero" id="inicio">
       <div class="container hero__grid">
         <div class="hero__content" data-reveal>
-          <span class="hero__eyebrow">Disponible para proyectos</span>
           <h1 class="hero__title">Joshua Hernández</h1>
-          <p class="hero__brand">Joshua.dev</p>
           <p class="hero__description">
             Construyo experiencias web modernas, funcionales y con atención al detalle,
             combinando diseño limpio y código de calidad.
@@ -126,11 +125,6 @@
             <a href="contacto.html" class="btn btn--outline">Contactarme <svg class="icon" aria-hidden="true"><use href="#i-arrow-right"></use></svg></a>
             <a href="assets/cv/CV-Joshua-Hernandez-Reyes.pdf" download class="btn btn--ghost">Descargar CV</a>
           </div>
-          <ul class="hero__quick-info" aria-label="Datos rápidos">
-            <li><span class="chip"><svg class="icon" aria-hidden="true"><use href="#i-map-pin"></use></svg></span><span class="about-info__label">Tuxtla Gutiérrez, Chiapas</span></li>
-            <li><span class="chip"><svg class="icon" aria-hidden="true"><use href="#i-graduation"></use></svg></span><span class="about-info__label">Ing. en Desarrollo y Tecnologías de Software</span></li>
-            <li><span class="chip"><svg class="icon" aria-hidden="true"><use href="#i-code"></use></svg></span><span class="about-info__label">Desarrollo web: frontend y proyectos full stack</span></li>
-          </ul>
         </div>
 
         <div class="hero__photo" data-reveal data-reveal-delay="2">
@@ -159,64 +153,6 @@
             <a href="https://wa.me/529921044338" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="WhatsApp">
               <svg viewBox="0 0 24 24" role="img"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
             </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container">
-        <div class="section__header" data-reveal>
-          <h2 class="section__title">Sobre <span class="gradient-text">mí</span></h2>
-          <p class="section__subtitle">Trayectoria y enfoque profesional.</p>
-        </div>
-
-        <div class="about-grid">
-          <div class="card about-text" data-reveal>
-            <p>
-              Soy originario de Tuxtla Gutiérrez, Chiapas, egresado de la
-              <strong>Universidad Autónoma de Chiapas (UNACH)</strong>. Me dedico a
-              construir experiencias web modernas y funcionales que combinan un diseño
-              cuidado con código limpio y mantenible.
-            </p>
-            <p>
-              Mi enfoque está en crear soluciones que realmente resuelven problemas:
-              desde sitios web hasta tiendas en línea como <strong>Origen Lab</strong>.
-              Trabajo con HTML, CSS, JavaScript y TypeScript, y sigo aprendiendo cada día
-              sobre Node.js y nuevas tecnologías.
-            </p>
-            <p>
-              Me caracterizo por mi atención al detalle, mi compromiso con la calidad y
-              mi disposición para colaborar en proyectos que aporten valor real.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section--alt">
-      <div class="container">
-        <div class="section__header" data-reveal>
-          <h2 class="section__title">Formación y <span class="gradient-text">certificaciones</span></h2>
-          <p class="section__subtitle">Trayectoria académica y aprendizaje continuo.</p>
-        </div>
-
-        <div class="education-grid">
-          <div class="card education-item" data-reveal>
-            <span class="chip education-item__icon" aria-hidden="true"><svg class="icon"><use href="#i-graduation"></use></svg></span>
-            <div class="education-item__info">
-              <h3 class="education-item__title">Ingeniería en Desarrollo y Tecnologías de Software</h3>
-              <p class="education-item__meta">Universidad Autónoma de Chiapas (UNACH) · Tuxtla Gutiérrez, Chiapas</p>
-            </div>
-            <a href="assets/cv/CV-Joshua-Hernandez-Reyes.pdf" download class="btn btn--outline education-item__cta">Descargar CV</a>
-          </div>
-
-          <div class="card education-item" data-reveal data-reveal-delay="1">
-            <span class="chip education-item__icon" aria-hidden="true"><svg class="icon"><use href="#i-trending-up"></use></svg></span>
-            <div class="education-item__info">
-              <h3 class="education-item__title">Diplomado en Marketing Digital</h3>
-              <p class="education-item__meta">Formación complementaria en estrategias de marketing digital</p>
-            </div>
           </div>
         </div>
       </div>
@@ -262,6 +198,7 @@
           <ul class="footer__list">
             <li><a href="index.html">Inicio</a></li>
             <li><a href="proyectos.html">Proyectos</a></li>
+            <li><a href="sobre-mi.html">Sobre mí</a></li>
             <li><a href="habilidades.html">Habilidades</a></li>
             <li><a href="contacto.html">Contacto</a></li>
           </ul>

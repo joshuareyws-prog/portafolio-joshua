@@ -13,7 +13,7 @@
   <script>
     (function () {
       try {
-        if (localStorage.getItem("theme") === "dark") document.documentElement.dataset.theme = "dark";
+        if (localStorage.getItem("theme") === "dark") { document.documentElement.dataset.theme = "dark"; } else { document.documentElement.dataset.theme = "light"; }
       } catch (e) {}
     })();
   </script>
@@ -61,7 +61,7 @@
     <div class="container navbar__inner">
       <a href="index.html" class="brand">
         <img src="assets/img/logo-nav.png" alt="Logo de Joshua Hernández" class="brand__logo" />
-        <span class="brand__name">Joshua Hernández</span>
+        
       </a>
 
       <button class="theme-toggle" id="themeToggle" type="button" aria-label="Cambiar tema" aria-pressed="false" title="Cambiar tema">
@@ -84,6 +84,7 @@
         <a href="index.html" class="nav__link">Inicio</a>
         <a href="habilidades.html" class="nav__link">Habilidades</a>
         <a href="proyectos.html" class="nav__link">Proyectos</a>
+        <a href="sobre-mi.html" class="nav__link">Sobre mí</a>
         <a href="contacto.html" class="nav__link">Contacto</a>
       </nav>
     </div>
@@ -117,6 +118,7 @@
           <ul class="footer__list">
             <li><a href="index.html">Inicio</a></li>
             <li><a href="proyectos.html">Proyectos</a></li>
+            <li><a href="sobre-mi.html">Sobre mí</a></li>
             <li><a href="habilidades.html">Habilidades</a></li>
             <li><a href="contacto.html">Contacto</a></li>
           </ul>

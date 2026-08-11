@@ -3,20 +3,20 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Habilidades y tecnologías de Joshua Hernández: HTML, CSS, JavaScript, TypeScript y Node.js." />
-  <title>Habilidades | Joshua Hernández</title>
+  <meta name="description" content="Sobre Joshua Hernández, desarrollador web. Trayectoria y enfoque profesional." />
+  <title>Sobre mí | Joshua Hernández</title>
   <link rel="icon" type="image/png" href="assets/img/logo-32.png" />
   <link rel="apple-touch-icon" href="assets/img/logo-180.png" />
   <meta name="theme-color" content="#0a0a0f" media="(prefers-color-scheme: dark)" />
   <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://portafolio-joshua-three.vercel.app/habilidades" />
-  <meta property="og:title" content="Habilidades | Joshua Hernández" />
-  <meta property="og:description" content="Habilidades y tecnologías de Joshua Hernández: HTML, CSS, JavaScript, TypeScript y Node.js." />
+  <meta property="og:url" content="https://portafolio-joshua-three.vercel.app/sobre-mi.html" />
+  <meta property="og:title" content="Sobre mí | Joshua Hernández" />
+  <meta property="og:description" content="Sobre Joshua Hernández, desarrollador web. Trayectoria y enfoque profesional." />
   <meta property="og:image" content="https://portafolio-joshua-three.vercel.app/assets/img/og-image.png" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Habilidades | Joshua Hernández" />
-  <meta name="twitter:description" content="Habilidades y tecnologías de Joshua Hernández: HTML, CSS, JavaScript, TypeScript y Node.js." />
+  <meta name="twitter:title" content="Sobre mí | Joshua Hernández" />
+  <meta name="twitter:description" content="Sobre Joshua Hernández, desarrollador web. Trayectoria y enfoque profesional." />
   <meta name="twitter:image" content="https://portafolio-joshua-three.vercel.app/assets/img/og-image.png" />
   <script>
     (function () {
@@ -24,6 +24,19 @@
         if (localStorage.getItem("theme") === "dark") { document.documentElement.dataset.theme = "dark"; } else { document.documentElement.dataset.theme = "light"; }
       } catch (e) {}
     })();
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Joshua Hernández",
+    "url": "https://portafolio-joshua-three.vercel.app",
+    "jobTitle": "Desarrollador web",
+    "email": "mailto:joshuareyws@gmail.com",
+    "sameAs": [
+      "https://github.com/joshuareyws-prog"
+    ]
+  }
   </script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -69,7 +82,6 @@
     <div class="container navbar__inner">
       <a href="index.html" class="brand">
         <img src="assets/img/logo-nav.png" alt="Logo de Joshua Hernández" class="brand__logo" />
-        
       </a>
 
       <button class="theme-toggle" id="themeToggle" type="button" aria-label="Cambiar tema" aria-pressed="false" title="Cambiar tema">
@@ -90,9 +102,9 @@
 
       <nav class="nav__links" id="navLinks" aria-label="Navegación principal">
         <a href="index.html" class="nav__link">Inicio</a>
-        <a href="habilidades.html" class="nav__link active">Habilidades</a>
+        <a href="habilidades.html" class="nav__link">Habilidades</a>
         <a href="proyectos.html" class="nav__link">Proyectos</a>
-        <a href="sobre-mi.html" class="nav__link">Sobre mí</a>
+        <a href="sobre-mi.html" class="nav__link active">Sobre mí</a>
         <a href="contacto.html" class="nav__link">Contacto</a>
       </nav>
     </div>
@@ -102,99 +114,55 @@
     <section class="page-hero">
       <div class="container">
         <div class="section__header" data-reveal>
-          <h1 class="section__title">Mis <span class="gradient-text">habilidades</span></h1>
-          <p class="section__subtitle">Tecnologías con las que desarrollo y doy vida a mis proyectos.</p>
+          <h1 class="section__title">Sobre <span class="gradient-text">mí</span></h1>
+          <p class="section__subtitle">Trayectoria y enfoque profesional.</p>
         </div>
 
-        <div class="skills-grid">
-          <div class="card skills-panel" data-reveal>
-            <h2 class="skills-panel__title">Lenguajes y tecnologías</h2>
+        <div class="about-grid">
+          <div class="card about-text" data-reveal>
+            <p>
+              Soy originario de Tuxtla Gutiérrez, Chiapas, egresado de la
+              <strong>Universidad Autónoma de Chiapas (UNACH)</strong>. Me dedico a
+              construir experiencias web modernas y funcionales que combinan un diseño
+              cuidado con código limpio y mantenible.
+            </p>
+            <p>
+              Mi enfoque está en crear soluciones que realmente resuelven problemas:
+              desde sitios web hasta tiendas en línea como <strong>Origen Lab</strong>.
+              Trabajo con HTML, CSS, JavaScript y TypeScript, y sigo aprendiendo cada día
+              sobre Node.js y nuevas tecnologías.
+            </p>
+            <p>
+              Me caracterizo por mi atención al detalle, mi compromiso con la calidad y
+              mi disposición para colaborar en proyectos que aporten valor real.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-            <div class="skill" data-skill="80">
-              <div class="skill__header">
-                <span class="skill__name"><span class="skill__icon"><svg class="icon" aria-hidden="true"><use href="#i-code"></use></svg></span> HTML</span>
-                <span class="skill__percent">80%</span>
-              </div>
-              <div class="skill__bar"><div class="skill__bar-fill" style="width:80%"></div></div>
-            </div>
+    <section class="section section--alt">
+      <div class="container">
+        <div class="section__header" data-reveal>
+          <h2 class="section__title">Formación y <span class="gradient-text">certificaciones</span></h2>
+          <p class="section__subtitle">Trayectoria académica y aprendizaje continuo.</p>
+        </div>
 
-            <div class="skill" data-skill="75">
-              <div class="skill__header">
-                <span class="skill__name"><span class="skill__icon"><svg class="icon" aria-hidden="true"><use href="#i-palette"></use></svg></span> CSS</span>
-                <span class="skill__percent">75%</span>
-              </div>
-              <div class="skill__bar"><div class="skill__bar-fill" style="width:75%"></div></div>
+        <div class="education-grid">
+          <div class="card education-item" data-reveal>
+            <span class="chip education-item__icon" aria-hidden="true"><svg class="icon"><use href="#i-graduation"></use></svg></span>
+            <div class="education-item__info">
+              <h3 class="education-item__title">Ingeniería en Desarrollo y Tecnologías de Software</h3>
+              <p class="education-item__meta">Universidad Autónoma de Chiapas (UNACH) · Tuxtla Gutiérrez, Chiapas</p>
             </div>
-
-            <div class="skill" data-skill="70">
-              <div class="skill__header">
-                <span class="skill__name"><span class="skill__icon"><svg class="icon" aria-hidden="true"><use href="#i-zap"></use></svg></span> JavaScript</span>
-                <span class="skill__percent">70%</span>
-              </div>
-              <div class="skill__bar"><div class="skill__bar-fill" style="width:70%"></div></div>
-            </div>
-
-            <div class="skill" data-skill="60">
-              <div class="skill__header">
-                <span class="skill__name"><span class="skill__icon"><svg class="icon" aria-hidden="true"><use href="#i-layout"></use></svg></span> TypeScript</span>
-                <span class="skill__percent">60%</span>
-              </div>
-              <div class="skill__bar"><div class="skill__bar-fill" style="width:60%"></div></div>
-            </div>
-
-            <div class="skill" data-skill="55">
-              <div class="skill__header">
-                <span class="skill__name"><span class="skill__icon"><svg class="icon" aria-hidden="true"><use href="#i-wrench"></use></svg></span> Tailwind CSS</span>
-                <span class="skill__percent">55%</span>
-              </div>
-              <div class="skill__bar"><div class="skill__bar-fill" style="width:55%"></div></div>
-            </div>
-
-            <div class="skill" data-skill="50">
-              <div class="skill__header">
-                <span class="skill__name"><span class="skill__icon"><svg class="icon" aria-hidden="true"><use href="#i-server"></use></svg></span> Node.js (básico)</span>
-                <span class="skill__percent">50%</span>
-              </div>
-              <div class="skill__bar"><div class="skill__bar-fill" style="width:50%"></div></div>
-            </div>
-
-            <div class="skill" data-skill="45">
-              <div class="skill__header">
-                <span class="skill__name"><span class="skill__icon"><svg class="icon" aria-hidden="true"><use href="#i-database"></use></svg></span> SQLite</span>
-                <span class="skill__percent">45%</span>
-              </div>
-              <div class="skill__bar"><div class="skill__bar-fill" style="width:45%"></div></div>
-            </div>
+            <a href="assets/cv/CV-Joshua-Hernandez-Reyes.pdf" download class="btn btn--outline education-item__cta">Descargar CV</a>
           </div>
 
-          <div class="card skills-panel" data-reveal data-reveal-delay="1">
-            <h2 class="skills-panel__title">Otras herramientas</h2>
-
-            <div class="tech-cloud" aria-label="Herramientas y tecnologías">
-              <span class="chip"><svg class="icon" aria-hidden="true"><use href="#i-git-branch"></use></svg> Git</span>
-              <span class="chip"><svg class="icon" aria-hidden="true"><use href="#i-database"></use></svg> Bases de datos</span>
-              <span class="chip"><svg class="icon" aria-hidden="true"><use href="#i-layout"></use></svg> Diseño responsivo</span>
-              <span class="chip"><svg class="icon" aria-hidden="true"><use href="#i-beaker"></use></svg> APIs REST</span>
-              <span class="chip"><svg class="icon" aria-hidden="true"><use href="#i-star"></use></svg> Buenas prácticas</span>
-              <span class="chip"><svg class="icon" aria-hidden="true"><use href="#i-trending-up"></use></svg> Lógica de negocio</span>
-              <span class="chip"><svg class="icon" aria-hidden="true"><use href="#i-megaphone"></use></svg> Marketing digital</span>
-              <span class="chip"><svg class="icon" aria-hidden="true"><use href="#i-user"></use></svg> Liderazgo</span>
-              <span class="chip"><svg class="icon" aria-hidden="true"><use href="#i-users"></use></svg> Trabajo en equipo</span>
-            </div>
-
-            <div class="stats" style="margin-top: var(--space-4)">
-              <div class="stat" data-reveal>
-                <p class="stat__value">3+</p>
-                <p class="stat__label">Proyectos</p>
-              </div>
-              <div class="stat" data-reveal data-reveal-delay="1">
-                <p class="stat__value">5+</p>
-                <p class="stat__label">Tecnologías</p>
-              </div>
-              <div class="stat" data-reveal data-reveal-delay="2">
-                <p class="stat__value">100%</p>
-                <p class="stat__label">Compromiso</p>
-              </div>
+          <div class="card education-item" data-reveal data-reveal-delay="1">
+            <span class="chip education-item__icon" aria-hidden="true"><svg class="icon"><use href="#i-trending-up"></use></svg></span>
+            <div class="education-item__info">
+              <h3 class="education-item__title">Diplomado en Marketing Digital</h3>
+              <p class="education-item__meta">Formación complementaria en estrategias de marketing digital</p>
             </div>
           </div>
         </div>
@@ -206,7 +174,7 @@
     <div class="container">
       <div class="footer__grid">
         <div>
-          <p class="footer__brand">Joshua Hernández Joshua.dev</p>
+          <p class="footer__brand"></p>
           <p class="footer__tagline">Desarrollador web enfocado en crear experiencias digitales modernas, funcionales y con atención al detalle.</p>
         </div>
         <nav aria-label="Enlaces rápidos">
@@ -229,7 +197,7 @@
         </div>
       </div>
       <div class="footer__bottom">
-        <p class="footer__copy">© <span id="year"></span> Joshua Hernández · Hecho con <span class="footer__heart" aria-hidden="true">♥</span></p>
+        
         <div class="footer__socials">
           <a href="https://github.com/joshuareyws-prog" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub">
             <svg viewBox="0 0 24 24" role="img"><path d="M12 .5A11.5 11.5 0 0 0 .5 12a11.5 11.5 0 0 0 7.9 10.9c.6.1.8-.2.8-.5v-2c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.4-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2a11 11 0 0 1 5.8 0C17.2 4.9 18.2 5.2 18.2 5.2c.6 1.6.2 2.8.1 3.1.7.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.6.8.5A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5z"/></svg>

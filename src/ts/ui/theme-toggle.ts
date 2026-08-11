@@ -12,7 +12,7 @@ const applyTheme = (theme: "dark" | "light", toggle: HTMLElement): void => {
   if (theme === "dark") {
     root.setAttribute(THEME_ATTR, "dark");
   } else {
-    root.removeAttribute(THEME_ATTR);
+    root.setAttribute(THEME_ATTR, "light");
   }
 
   toggle.setAttribute("aria-pressed", String(theme === "light"));
