@@ -71,7 +71,7 @@
 
 .nav__link:hover,
 .nav__link.active {
-  color: var(--color-purple-300);
+  color: var(--color-purple-500);
 }
 
 .nav__link::after {
@@ -80,7 +80,7 @@
   left: 0.75rem;
   right: 0.75rem;
   bottom: 0.1rem;
-  height: 2px;
+  height: 1px;
   border-radius: var(--radius-full);
   background: var(--color-purple-500);
   transform: scaleX(0);

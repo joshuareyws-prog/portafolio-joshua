@@ -46,10 +46,6 @@
   transition: transform 0.25s ease;
 }
 
-.btn:hover .icon {
-  transform: translateX(3px);
-}
-
 /* ===== Tarjetas ===== */
 .card {
   background: var(--color-black-card);
